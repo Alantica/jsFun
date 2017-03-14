@@ -162,26 +162,47 @@ document.getElementById("image").src = "images/landscape.jpg";
 
 <script>
 //this is where we declare the function
-var pictureChange = function() {
+//var pictureChange = function() {
 	//here, we will grab the image id and change the picture
-  document.getElementById('image').src = 'images/cat.gif';
+//  document.getElementById('image').src = 'images/cat.gif';
 };
 </script>
-<!-- Here is the image tag- we will use this id  -->
+<!--
+ Here is the image tag- we will use this id  
 <img id="theImage" src='images/smiley.gif' width="160" height="120">
+-->
 <!-- Here is the button- it calls our Javascript function when clicked  -->
+<!--
 <p><input type="button" id="theButton" value="click me to change the picture!" onclick=pictureChange()></p>
 
 <br>
+-->
 <br>
 <!-- TO DO: 
 Find two images, and make your own picture switcher below
 -->
 
 <!-- YOUR CODE GOES HERE!  -->
+<!--     <img id="image" src="images/smiley.gif" width="160" height="120">-->
 
+<!--
+ <script>
+document.getElementById("Help").src = "images/817idolizedTransparent.png";
+</script>
+-->
 
+<script>
+var picchange = function() {
+  document.getElementById('Help').src = 'images/817idolizedTransparent.png';
+};
+</script>
+    
+<img id="Help" src='images/1127idolizedTransparent.png' width="160" height="120">
+<p><input type="button" id="theButton" value="click me to change the picture!" onclick=picchange()></p>
 
+<br>
+<br>
+    
 <!-- BACK TO THE ASSIGNMENT!  -->
 
 <h3>Making a Picture Flipper with HTML and JS</h3>
