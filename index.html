@@ -211,25 +211,25 @@ var picchange = function() {
 
 <script>
 //make an array containing your images
-var myPictures = ['images/banana1.gif', 'images/hackerman.gif', 'images/pizza.gif', 'images/imDead.jpg', 'images/bandRecital.jpg', 'images/yTho.jpg', 'images/questions.jpg', 'images/wifiDown.jpg', 'images/coffinSkate.jpg', 'images/$10words.jpg'];
+//var myPictures = ['images/banana1.gif', 'images/hackerman.gif', 'images/pizza.gif', 'images/imDead.jpg', 'images/bandRecital.jpg', 'images/yTho.jpg', 'images/questions.jpg', 'images/wifiDown.jpg', 'images/coffinSkate.jpg', 'images/$10words.jpg'];
 
 //set the count at zero- this way, we will be sure to start at the beginning of our array of images
-var picsIndex = 0;
+//var picsIndex = 0;
 
 //write a function to flip between images in the array
-var changePicture = function () {
+//var changePicture = function () {
 	//define our image variable- this will be the image id
-  var img = document.getElementById('picture');
+  //var img = document.getElementById('picture');
 
   //our index starts at O; we want to increment upward for as many images as there are in the myPictures array. If you had 5 pictures in your array, the line would read:
-  // picsIndex = ++picsIndex % 5;
-  picsIndex = ++picsIndex % 10;
+   //picsIndex = ++picsIndex % 5;
+  //picsIndex = ++picsIndex % 10;
   //here, we set the image source equal to the index position in myPictures dictated by current count value of picsIndex
-  img.src = myPictures[picsIndex];
-};
-</script>
+  //img.src = myPictures[picsIndex];
+//};
+//</script>
 
-<img id='picture' src='images/smiley.gif' width="160" height="120">
+<!-- <img id='picture' src='images/smiley.gif' width="160" height="120">
 
 <p><input type="button" id='button2' value="click me to flip through some pictures!" onclick=changePicture()></p>
 
@@ -242,7 +242,32 @@ Find some images, and make your own picture flipper below.
 
 <!-- YOUR CODE GOES HERE!  -->
 
+    <script>
+//make an array containing your images
+var ehPictures = ['images/angelumi.jpg','images/devilumi.jpg','images/marineumi.png','images/umiumi.jpg'];
 
+//set the count at zero- this way, we will be sure to start at the beginning of our array of images
+var picsIndex = 0;
+
+//write a function to flip between images in the array
+var changemehPicture = function () {
+	//define our image variable- this will be the image id
+  var img = document.getElementById('mehpicture');
+
+  //our index starts at O; we want to increment upward for as many images as there are in the myPictures array. If you had 5 pictures in your array, the line would read:
+  // picsIndex = ++picsIndex % 5;
+  picsIndex = ++picsIndex % 4;
+  //here, we set the image source equal to the index position in myPictures dictated by current count value of picsIndex
+  img.src = ehPictures[picsIndex];
+};
+</script>
+
+<img id='mehpicture' src='images/angelumi.jpg' width="160" height="120">
+
+<p><input type="button" id='button2' value="click me to flip through some pictures!" onclick=changemehPicture()></p>
+
+<br>
+<br>
 
 <!-- CONGRATULATIONS! YOU'VE REACHED THE END OF THE ASSIGNMENT! Don't forget to commit your code! -->
 
